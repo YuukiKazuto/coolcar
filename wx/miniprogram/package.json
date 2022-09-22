@@ -1,0 +1,16 @@
+{
+  "name": "miniprogram-ts-less-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "camelcase-keys": "^6.2.2",
+    "protobufjs": "^6.10.1"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^3.6.0"
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    ">
+    <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    ">
+        <div id="title" class="blue">租辆酷车</div>
+        <div>css教学</div>
+    </div>
+    <div class="trips">
+        <div class="item blue">
+            <div>中关村到天安门</div>
+            <div>价格：120元</div>
+        </div>
+        <div class="item red" style="
+            display: flex;
+            height: 100px;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+        ">
+            <div>陆家嘴到迪士尼</div>
+            <div>价格：50元</div>
+            <div class="star"></div>
+        </div>
+        <div class="item blue">
+            <div>天河体育中心到广州塔</div>
+            <div>价格：80元</div>
+        </div>
+    </div>
+    
+    <style>
+        div {
+            font-size: x-large;
+        }
+        #title {
+            font-size: 60px;
+        }
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .item.blue {
+            color: cornflowerblue;
+        }
+        .item {
+            border: 2px solid;
+            position: relative;
+        }
+        /* flex布局默认
+            flex-direction: row;
+            align-items: stretch;
+        */
+        /* justify-content: 
+                space-around 中间空白=首尾空白*2
+                space-evenly 空白等分
+                space-between 头尾元素顶端对齐容器的两边
+        */
+        .trips{
+            border: 2px solid;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: space-evenly;
+            align-self: stretch;
+        }
+        .star {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>    
+</body>
+</html>
